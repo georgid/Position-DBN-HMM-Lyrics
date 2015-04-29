@@ -1,0 +1,30 @@
+This is a module for HHMM-based decoding of already given candidate segments from audio
+---------------------------------
+
+inputs: 
+candSegments - read from file
+URI_targetNoExt
+
+
+
+outputs: 
+ 
+allWeights = [];
+allStartFrames = [];
+allEndFrames = [];
+
+
+CODE organization
+-------------------------
+main function doit
+
+decodeOneCandSegment
+rankPaths - select only full paths ; calculate ranks for these selected paths 
+
+NOTE: decodeViterbi -> if whichFrame=1
+
+
+params: init prob equal to start at p=1:10; fix to start at vel v=2;  
+
+
+we allow bigger transition prob, to allow change of speed to accommodate skipping or  insertion of phonemes relative to phoneme transcipt
