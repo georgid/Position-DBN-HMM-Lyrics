@@ -23,7 +23,7 @@ for i=1:size(timeFrameIdxs,1)
 	currTimeFrame = timeFrameIdxs(i);
 	currPos = positionS2(i);
 	
-	% check here for restart
+	% check here for restart of query section
 	if currPos <= prevPos
 		% make sure end of section reached
 			
@@ -31,6 +31,8 @@ for i=1:size(timeFrameIdxs,1)
 				fprintf('final pos %d', prevPos); 
 				currWeight = currWeight / pathLength;
 				weights = [weights currWeight];
+% 				currWeight = sprintf('%.30f', currWeight)
+
 				endFrames = [endFrames timeFrameIdxs(i-1)];
 				startFrames = [startFrames currTimeFrame];
 
@@ -46,6 +48,8 @@ for i=1:size(timeFrameIdxs,1)
 			if currPos > maxPos - maxVel -1
 				fprintf('final pos %d', prevPos); 
 				currWeight = currWeight / pathLength;
+% 				currWeight = sprintf('%.30f', currWeight)
+
 				weights = [weights currWeight];
 				endFrames = [endFrames timeFrameIdxs(i-1)];
 				
@@ -62,7 +66,7 @@ for i=1:size(timeFrameIdxs,1)
 	pathLength = pathLength + 1;
 end
 
-% make sure same lengts
+% make sure same lengths
 lEnds = length(endFrames);
 startFrames = startFrames(1:lEnds);
 

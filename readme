@@ -1,10 +1,10 @@
 This is a module for HHMM-based decoding of already given candidate segments from audio
 ---------------------------------
 
+
 inputs: 
 candSegments - read from file
 URI_targetNoExt
-
 
 
 outputs: 
@@ -12,6 +12,12 @@ outputs:
 allWeights = [];
 allStartFrames = [];
 allEndFrames = [];
+
+!!! current parameters: 
+initial tempoCoeff = 2
+weight - according to acoustic weight
+pr velocity transition = 0.2
+with tempo estimation from me. not from Sertan
 
 
 CODE organization
