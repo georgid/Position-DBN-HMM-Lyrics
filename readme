@@ -1,6 +1,39 @@
-This is a module for HHMM-based decoding of already given candidate segments from audio
+
+This is a matlab implementation for Hierarchical Hidden Markov Models (HHMMs)-based search of lyrics key-phrases:
+-a textual keyphrase (with musical scores) is considered as query; 
+-audio candidate segments from audio are targets
+
+
+
+Availability of software:
 ---------------------------------
 
+Copyright 2015,2016 Music Technology Group - Universitat Pompeu Fabra
+
+Position-DBN-HMM-Lyrics is free software: you can redistribute it and/or modify it under the terms of the 
+GNU Affero General Public License as published by the Free Software Foundation (FSF), either version 3 of the License, 
+or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  
+If not, see http://www.gnu.org/licenses/
+
+
+Citation:
+---------------------------------
+Please cite the following work if you use the part of this software in your work: 
+
+Dzhambazov, G., Şentürk S., & Serra X. (2015).  
+Searching Lyrical Phrases in A-Capella Turkish Makam Recordings. 
+16th International Society for Music Information Retrieval (ISMIR) Conference
+
+
+
+
+Usage of software:
+---------------------------------
 
 inputs: 
 candSegments - read from file
@@ -20,8 +53,9 @@ pr velocity transition = 0.2
 with tempo estimation from me. not from Sertan
 
 
-CODE organization
--------------------------
+
+Software modules description:
+---------------------------------------
 main function doit
 
 decodeOneCandSegment
