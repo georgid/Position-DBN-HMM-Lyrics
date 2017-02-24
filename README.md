@@ -62,7 +62,9 @@ top-most script doit
 
 [main script for step 2. HMM](https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doitDBNHMM.m)
 
-it (calls here)[https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doitDBNHMM.m#L73] (decodeOneCandSegment)[https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/decodeOneCandSegment.m] 
+it [calls here](https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doitDBNHMM.m#L73) [decodeOneCandSegment](https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/decodeOneCandSegment.m)
+
+Transition probabilities in creating a dense transition matrix in [doTransMatrix](https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doTransMatrix.m) 
 
 
 Notes:
