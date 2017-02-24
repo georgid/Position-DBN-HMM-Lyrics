@@ -1,5 +1,5 @@
 function transMatrixFull = calcTransMatrixFull(V, P, prChangeVelocity)
-
+	% dense transition Matrix. see method for description of transMatrix object
 	transMatrix=doTransMatrix(V,P, prChangeVelocity);
 
 	S = 2;
