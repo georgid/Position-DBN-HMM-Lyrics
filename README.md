@@ -5,6 +5,7 @@ This is a matlab implementation for Hierarchical Hidden Markov Models (HHMMs)-ba
 
 
 
+
 Availability of software:
 ---------------------------------
 
@@ -29,18 +30,19 @@ Dzhambazov, G., Şentürk S., & Serra X. (2015).
 Searching Lyrical Phrases in A-Capella Turkish Makam Recordings. 
 16th International Society for Music Information Retrieval (ISMIR) Conference
 
+NOTE: this repository covers only step 2: HMM-based model of the paper
 
 
 
 Usage of software:
 ---------------------------------
 
-inputs: 
+### inputs: 
 candSegments - read from file
 URI_targetNoExt
 
 
-outputs: 
+### outputs: 
  
 allWeights = [];
 allStartFrames = [];
@@ -56,9 +58,15 @@ with tempo estimation from me. not from Sertan
 
 Software modules description:
 ---------------------------------------
-main function doit
+top-most script doit
 
-decodeOneCandSegment
+[main script for step 2. HMM](https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doitDBNHMM.m)
+
+it (calls here)[https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/doitDBNHMM.m#L73] (decodeOneCandSegment)[https://github.com/georgid/Position-DBN-HMM-Lyrics/blob/master/decodeOneCandSegment.m] 
+
+
+Notes:
+--------------------------------------
 rankPaths - select only full paths ; calculate ranks for these selected paths 
 
 NOTE: decodeViterbi -> if whichFrame=1

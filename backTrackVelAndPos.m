@@ -1,4 +1,5 @@
-%%% BACKTRACKINGs
+%%% make sense of the 3 Velocity, Position and Section states 
+%%%%%%% uses https://es.mathworks.com/help/matlab/ref/ind2sub.html?requestedDomain=www.mathworks.com
 
 function [mostProbVel mostProbPos mostProbS] =  backTrackVelAndPos( endFrameDelta, allBackPointers,  numFeatureVectors, V, P )
 
