@@ -1,4 +1,5 @@
 function transMatrix =  doTransMatrix( n_v, n_p, pr)
+% construct a dense transition matrix. 
 %  @param: n_p : from position
 % @param: n_v: from velocity
 
